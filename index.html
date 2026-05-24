@@ -13,17 +13,17 @@
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="container shadow bg-light">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img class="rounded-circle me-2" style="height: 50px; width:50px;" src="Capture.PNG" alt="School Logo">
+                    <img class="rounded-circle me-2" style="height: 50px; width:50px;" src="images/1.JPG" alt="School Logo">
                     <div>
                         <h5 class="mb-0 fw-bold">Mundarakan int'l Academy</h5>
-                        <small><i>Knowledge | Discipline | Excellence</i></small>
+                        <small><i>Knowledge | Excellence.</i></small>
                     </div>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
@@ -38,18 +38,286 @@
                             <a href="#" class="nav-link text-white fw-semibold px-3">Academics</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white fw-semibold px-3">About</a>
+                            <a href="#ABOUT" class="nav-link text-white fw-semibold px-3">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white fw-semibold px-3">Teachers</a>
+                            <a href="#GALLERIES" class="nav-link text-white fw-semibold px-3">Galleries</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link text-white fw-semibold px-3">Contact</a>
+                            <a href="#CONTACT" class="nav-link text-white fw-semibold px-3">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <section>
+            <div class="position-relative">
+                <img src="images/2.JPG" class="mt-2" style="height: 500px; width: 100%; filter: brightness(50%);"
+                 alt="pic">
+                 <div class="position-absolute top-50 translate-middle-y text-start text-white ps-4">
+                    <h1 class=" fw-bold display-3">Welcome to</h1>
+                    <h1 class="text-info fw-bold">Mundarakan Int'l Academy</h1>
+                    <p class="lead">Providing quality education, Digital learning and Effective student management.</p>
+                    <button class="btn btn-primary px-4 fw-semibold ms-5">Admission</button>
+                    
+                    <button class="dropdown dropend btn btn-success dropdown-toggle px-4 fw-semibold ms-2"
+                    data-bs-toggle="dropdown">Sign In</button>
+                    <ul class="dropdown-menu bg-light">
+                        <li class="dropdown-item fw-semibold" data-bs-toggle="modal" data-bs-target="#admin">Admin Login➯</li>
+                        <li class="dropdown-item fw-semibold" data-bs-toggle="modal" data-bs-target="#staff">Staff Login➯</li>
+                        <li class="dropdown-item fw-semibold" data-bs-toggle="modal" data-bs-target="#student">Student Login➯</li>
+                    </ul>
+                 </div>
+             </div>
+        </section>
+                                        <!-- ADMIN MODAL -->
+        <div class="modal fade" id="admin">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h4 class="modal-title text-center lead">ADMIN LOGIN</h4>
+                        <form action="" method="post">
+                            <b><label class="form-label ms-2 mb-0" for="admin_username">Username:</label></b>
+                            <input class="form-control " type="text" name="admin_username"
+                            placeholder="Admin Username" required>
+                            <b><label class="form-label ms-2 mb-0" for="admin_password">Password:</label></b>
+                            <input class="form-control " type="password" name="admin_password"
+                            placeholder="Admin Password" required>
+                            <div class="text-center mt-3">
+                                <button class="btn btn-success btn-sm col-sm-6">Login</button>
+                                <button type="button" class="btn btn-danger btn-sm col-sm-3"
+                                data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                                    <!-- STAFF MODAL -->
+        <div class="modal fade" id="staff">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h4 class="modal-title text-center lead">STAFF LOGIN</h4>
+                        <form action="" method="post">
+                            <b><label class="form-label ms-2 mb-0" for="staff_username">Username:</label></b>
+                            <input class="form-control" type="text" name="staff_username"
+                            placeholder="Staff Username" required>
+                            <b><label class="form-label ms-2 mb-0" for="staff_password">Password:</label></b>
+                            <input class="form-control" type="password" name="staff_password"
+                            placeholder="Staff Password" required>
+                            <div class="text-center mt-3">
+                                <button class="btn btn-success btn-sm col-sm-6">Login</button>
+                                <button type="button" class="btn btn-danger btn-sm col-sm-3"
+                                data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                                    <!-- STUDENT MODAL -->
+        <div class="modal fade" id="student">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h4 class="modal-title text-center lead">STUDENT LOGIN</h4>
+                        <form action="" method="post">
+                            <b><label class="form-label ms-2 mb-0" for="student_username">Username:</label></b>
+                            <input class="form-control" type="text" name="student_username"
+                            placeholder="Student Username" required>
+                            <b><label class="form-label ms-2 mb-0" for="student_password">Password:</label></b>
+                            <input class="form-control" type="password" name="student_password"
+                            placeholder="Student Password" required>
+                            <div class="text-center mt-3">
+                                <button class="btn btn-success btn-sm col-sm-6">Login</button>
+                                <button type="button" class="btn btn-danger btn-sm col-sm-3"
+                                data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main>
+            <div class="row justify-content-around" id="ABOUT">
+                <div class="col-sm-4">
+                    <div class="card shadow mt-4 border-0 border-start border-primary border-4 rounded-2">
+                        <div class="card-body">
+                            <h4 class="text-center fw-bold">OUR MISSION</h4>
+                            <p class="lead text-center">To Provide high quality education that nurtures academic excellence, moral values, creativity
+                                and leadership skills.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card shadow mt-4 border-0 border-start border-primary border-4 rounded-2">
+                        <div class="card-body p-0">
+                            <h4 class="text-center fw-bold">OUR VISION</h4>
+                            <p class="lead text-center">To become a leading institution recognized for producing disciplined, confident,
+                                innovative and globally competitive students.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card shadow mt-4 border-0 border-start border-primary border-4 rounded-2">
+                        <div class="card-body p-0">
+                            <h4 class="text-center fw-bold">ACADEMIC SECTIONS</h4>
+                                <ul class="lead text-center" style="list-style-type: none">
+                                    <li>~ Nursery.</li>
+                                    <li>~ Primary</li>
+                                    <li>~ Junior.</li>
+                                    <li>~ Senior.</li>
+                                </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-sm-7">
+                    <div class="card shadow mt-4 border-0 border-start border-primary border-4 rounded-2">
+                        <div class="card-body p-0">
+                            <h4 class="text-center fw-bold">WHY CHOOSE US</h4>
+                            <ul class="lead text-center" style="list-style-type: none">
+                                <li>~ Conducive and secure learning environment.</li>
+                                <li>~ Modern teaching techniques and facilities.</li>
+                                <li>~ Strong academic and moral foundation.</li>
+                                <li>~ Qualified and experienced teachers.</li>
+                                <li>~ Affordable and quality education.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5">
+                    <div class="card shadow mt-4 border-0 border-start border-primary border-4 rounded-2">
+                        <div class="card-body">
+                        <h4 class="text-center fw-bold">OUR HISTORY</h4>
+                            <p class="lead text-center">Founded with a passion for educational excellence, the school was established
+                                to create a safe and inspiring environment where students can grow academically, socially
+                                and morally.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3 justify-content-center">
+                <div class="col-3 card text-center shadow me-3 rounded-0">
+                    <h1 class="counter mb-0" data-target="30">0</h1>
+                    <p class="lead">Staff</p>
+                </div>
+                <div class="col-3 card text-center shadow rounded-0">
+                    <h1 class="counter mb-0" data-target="230">0</h1>
+                    <p class="lead">Students</p>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="fw-bold text-center mt-4" id="GALLERIES">GALLERIES</h2>
+                <div class="row">
+                    <div class="col-sm-6 mt-3 shadow position-relative">
+                        <img src="images/4.JPG" style="height: 250px; width: 100%; filter: brightness(70%);" alt="">
+                        <div class="position-absolute top-50 start-0 text-white ps-5">
+                            <h3 class="fw-bold">CLASSROOMS</h3>
+                            <p class="lead">Learning Moments.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-3 shadow position-relative">
+                        <img src="images/5.JPG" style="height: 250px; width: 100%; filter: brightness(70%);" alt="">
+                        <div class="position-absolute top-50 start-0 text-white ps-5">
+                            <h3 class="fw-bold">EVENTS</h3>
+                            <p class="lead">School Events.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-3 shadow position-relative">
+                        <img src="images/6.JPG" style="height: 250px; width: 100%; filter: brightness(70%);" alt="">
+                        <div class="position-absolute top-50 start-0 text-white ps-5">
+                            <h3 class="fw-bold">SPORTS</h3>
+                            <p class="lead">Sports Activities.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mt-3 shadow position-relative">
+                        <img src="images/3.JPG" style="height: 250px; width: 100%; filter: brightness(70%);" alt="">
+                        <div class="position-absolute top-50 start-0 text-white ps-5">
+                            <h3 class="fw-bold">GRADUATION</h3>
+                            <p class="lead">Graduation Day.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h2 class="fw-bold text-center mt-4" id="CONTACT">CONTACT US</h2>
+                <div class="row justify-content-center mt-3">
+                    <div class="col-sm-4">
+                        <form action="" method="post"> 
+                            <div class="p-3 rounded-4 shadow-lg">
+                                <h3 class="text-center text-success">Contact Form</h3>
+                                <input class="form-control mb-3 shadow" type="text" placeholder="Your Name" required>
+                                <input class="form-control mb-3 shadow" type="email" placeholder="Your Email" required>
+                                <textarea class="form-control mb-3 shadow" name="message" cols="3" rows="3" placeholder="Write Your Message..."></textarea>
+                                <div class="text-center">
+                                    <button class="btn btn-success px-4">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-4 mt-5 align-content-center">
+                        <p class="lead">Call us on: <a href="tel:+2349130952060" class="text-decoration-none">09130952060</a></p>
+                        <p class="lead">Email us: <a href="mailto:musaidreex63@gmail.com" class="text-decoration-none"
+                        >musaidreex63@gmail.com</a></p>
+                        <p class="lead">Address: Khandahar Kofar Idi Bauchi,</p>
+                        <div class="ps-5">
+                            <a href="https://facebook.com/moosaedreex" target="_blank" class="me-3"><img src="images/7.PNG" alt="Facebook"
+                            style="height: 50px"></a>
+                            <a href="https://instagram.com/moosaedreex" target="_blank" class="me-3"><img src="images/8.PNG" alt="Instagram"
+                            style="height: 50px"></a>
+                            <a href="https://wa.me/9130952060" target="_blank" class="me-3"><img src="images/9.PNG" alt="Whatsapp"
+                            style="height: 50px"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-dark mt-5 p-2 pb-2">
+            <p class="text-light fw-bold lead text-center">&copy; <?= date('Y'); ?> Mundarakan Int'l Academy. All Rights Reserved.</p>
+        </footer>
     </div>
+
+    <script>
+        const counters = document.querySelectorAll('.counter');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+
+                if(entry.isIntersecting){
+                    const counter = entry.target;
+                    const updateCounter = () => {
+                        const target = +counter.getAttribute('data-target');
+                        const current = +counter.innerText;
+                        const increment = target / 20;
+                        if(current < target){
+                            counter.innerText = Math.ceil(current + increment);
+                            setTimeout(updateCounter, 100);
+                        } else {
+                            counter.innerText = target;
+                        }
+                    };
+                    updateCounter();
+                    // Prevent running again
+                    observer.unobserve(counter);
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+        counters.forEach(counter => {
+            observer.observe(counter);
+        });
+        </script>
 </body>
 </html>
